@@ -98,7 +98,7 @@ CREATE OR REPLACE FUNCTION brh.calcula_idade (
     v_idade NUMBER;
 BEGIN
     IF p_data >= sysdate THEN
-        raise_application_error(-20001, '"Impossóvel calcular idade! Data inválida:'
+        raise_application_error(-20001, '"Impossivel calcular idade! Data inválida:'
                                         || p_data
                                         || '>.".');
     ELSE
